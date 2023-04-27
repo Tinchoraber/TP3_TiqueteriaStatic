@@ -1,0 +1,15 @@
+Z:\Programacion\4to\TP3_TiqueteriaStatic\bin\Debug\net7.0\TP3_TiqueteriaStatic.exe
+Z:\Programacion\4to\TP3_TiqueteriaStatic\bin\Debug\net7.0\TP3_TiqueteriaStatic.deps.json
+Z:\Programacion\4to\TP3_TiqueteriaStatic\bin\Debug\net7.0\TP3_TiqueteriaStatic.runtimeconfig.json
+Z:\Programacion\4to\TP3_TiqueteriaStatic\bin\Debug\net7.0\TP3_TiqueteriaStatic.dll
+Z:\Programacion\4to\TP3_TiqueteriaStatic\bin\Debug\net7.0\TP3_TiqueteriaStatic.pdb
+Z:\Programacion\4to\TP3_TiqueteriaStatic\obj\Debug\net7.0\TP3_TiqueteriaStatic.csproj.AssemblyReference.cache
+Z:\Programacion\4to\TP3_TiqueteriaStatic\obj\Debug\net7.0\TP3_TiqueteriaStatic.GeneratedMSBuildEditorConfig.editorconfig
+Z:\Programacion\4to\TP3_TiqueteriaStatic\obj\Debug\net7.0\TP3_TiqueteriaStatic.AssemblyInfoInputs.cache
+Z:\Programacion\4to\TP3_TiqueteriaStatic\obj\Debug\net7.0\TP3_TiqueteriaStatic.AssemblyInfo.cs
+Z:\Programacion\4to\TP3_TiqueteriaStatic\obj\Debug\net7.0\TP3_TiqueteriaStatic.csproj.CoreCompileInputs.cache
+Z:\Programacion\4to\TP3_TiqueteriaStatic\obj\Debug\net7.0\TP3_TiqueteriaStatic.dll
+Z:\Programacion\4to\TP3_TiqueteriaStatic\obj\Debug\net7.0\refint\TP3_TiqueteriaStatic.dll
+Z:\Programacion\4to\TP3_TiqueteriaStatic\obj\Debug\net7.0\TP3_TiqueteriaStatic.pdb
+Z:\Programacion\4to\TP3_TiqueteriaStatic\obj\Debug\net7.0\TP3_TiqueteriaStatic.genruntimeconfig.cache
+Z:\Programacion\4to\TP3_TiqueteriaStatic\obj\Debug\net7.0\ref\TP3_TiqueteriaStatic.dll
