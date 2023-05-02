@@ -1,11 +1,14 @@
-﻿int numero,tipoEntrada = 0, tipoEntrada1 = 0, tipoEntrada2 = 0, tipoEntrada3 = 0, tipoEntrada4 = 0;
+﻿using System.Collections.Generic;
+int numero,tipoEntrada = 0, tipoEntrada1 = 0, tipoEntrada2 = 0, tipoEntrada3 = 0, tipoEntrada4 = 0, totalAbonado = 0;
 Cliente cliente1 = new Cliente();
+List<string> ListaEstadisticas = new List<string>();
 do
 {
     Console.WriteLine("1. Nueva Inscripción: ");
     Console.WriteLine("2. Obtener estadísticas del Evento.");
     Console.WriteLine("3. Buscar Cliente. ");
     Console.WriteLine("4. Cambiar entrada de un Cliente. ");
+    Console.WriteLine("5, Salir");
     numero = Funciones.ingresarNumero("Ingrese su numero, tiene que ser entre 1 a 5");
     switch(numero)
     {
@@ -14,7 +17,7 @@ do
         break;
 
         case 2:
-            obtenerEstadisticas();
+            obtenerEstadisticas(totalAbonado);
         break;
 
         case 3:
@@ -33,13 +36,6 @@ do
         string apellido = Funciones.ingresarTexto("Ingrese su apellido");
         DateTime fecha = Funciones.ingresarFecha("Ingrese la fecha de su inscripcion");
         tipoEntrada = Funciones.ingresarTipoEntrada("Ingrese el tipo de entrada, 1 es para dia 1, 2 es para el dia 2, 3 es para dia 3 y 4 es para el full pass");
-        int totalAbonado = Funciones.calcularTotal(tipoEntrada);
-        cliente1 = new Cliente(Dni, nombre, apellido, fecha, tipoEntrada, totalAbonado);
-        Tiquetera.agregarCliente(cliente1);
-        return cliente1;
-    }
-    void obtenerEstadisticas()
-    {
         switch(tipoEntrada)
         {
             case 1: 
@@ -58,6 +54,25 @@ do
             tipoEntrada4++;
             break;
         }
+        totalAbonado = Funciones.calcularTotal(tipoEntrada);
+        cliente1 = new Cliente(Dni, nombre, apellido, fecha, tipoEntrada, totalAbonado);
+        Tiquetera.agregarCliente(cliente1);
+        return cliente1;
+    }
+    void obtenerEstadisticas(int totalAbonado)
+    {
+    ListaEstadisticas = Tiquetera.estadisticasTiquetera(tipoEntrada1, tipoEntrada2, tipoEntrada3, tipoEntrada4, totalAbonado);
+    if(ListaEstadisticas[0] == "")
+    {
+        Console.WriteLine("No se anoto nadie");
+    }
+    else
+    {
+        for (int i = 0; i < ListaEstadisticas.Count(); i++)
+        {
+            Console.WriteLine(ListaEstadisticas[i]);
+        }
+    }
     }
     void buscarCliente()
     {

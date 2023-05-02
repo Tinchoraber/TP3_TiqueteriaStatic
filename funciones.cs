@@ -100,4 +100,19 @@ public static class Funciones
         }
         return id;
     }
+    public static double calcularTipoEntrada(int tipo, int cantidad)
+    {
+        double porcentaje = tipo * 100 / cantidad;
+        return porcentaje;
+    }
+    public static int calcularTotalEntradas(int total, int cantidad)
+    {
+        int totalEntradas = total * cantidad;
+        return totalEntradas;
+    }
+    public static int calcularRecaudacionTotal(int total1, int total2, int total3, int total4)
+    {
+        int recaudacionTotal = total1 + total2 + total3 + total4;
+        return recaudacionTotal;
+    }
 }
